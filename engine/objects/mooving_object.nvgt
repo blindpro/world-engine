@@ -9,7 +9,7 @@ void move(string dir)
 {
 if(dir == "up")
 {
-if(map_size>0 and pos.z+1>=map_size)
+if(map_size>0 and pos.z+1>map_size)
 {
 return;
 }
@@ -21,7 +21,7 @@ pos.z--;
 }
 else if(dir == "forward")
 {
-if(map_size>0 and pos.y+1>=map_size)
+if(map_size>0 and pos.y+1>map_size)
 {
 return;
 }
@@ -37,7 +37,7 @@ pos.x--;
 }
 else if(dir == "right")
 {
-if(map_size>0 and pos.x+1>=map_size)
+if(map_size>0 and pos.x+1>map_size)
 {
 return;
 }
