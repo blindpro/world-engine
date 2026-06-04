@@ -13,6 +13,12 @@ int get_z()
 {
 return pos.z;
 }
+void update_position(int x, int y, int z = 0)
+{
+pos.x = x;
+pos.y = y;
+pos.z = z;
+}
 int get_distance_3d(world_object@ other)
 {
 return get_3d_distance(get_x(), get_y(), get_z(), other.get_x(), other.get_y(), other.get_z());
