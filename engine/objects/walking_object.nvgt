@@ -1,0 +1,23 @@
+class walking_object: mooving_object
+{
+timer movetimer;
+int speed;
+walking_object(int x, int y, int z, int speed)
+{
+super(x,y,z);
+this.speed = speed;
+}
+bool can_move()
+{
+return movetimer.elapsed>=speed;
+}
+void move(string dir)
+{
+if(!can_move())
+{
+return;
+}
+mooving_object::move(dir);
+movetimer.restart();
+}
+}
