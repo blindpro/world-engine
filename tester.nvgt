@@ -1,0 +1,37 @@
+#include"includes/*.nvgt"
+#include"engine/*.nvgt"
+#include"speech.nvgt"
+player p;
+void main()
+{
+show_window("world engine tester");
+while(true)
+{
+wait(5);
+if(key_pressed(KEY_C))
+{
+speak(p.get_x()+", "+p.get_y()+", "+p.get_z());
+}
+if(key_pressed(KEY_LEFT))
+{
+p.move("left");
+}
+if(key_pressed(KEY_RIGHT))
+{
+p.move("right");
+}
+if(key_pressed(KEY_UP))
+{
+p.move("forward");
+}
+if(key_pressed(KEY_DOWN))
+{
+p.move("down");
+}
+if(key_pressed(KEY_F4))
+{
+speak("exiting...");
+exit();
+}
+}
+}
