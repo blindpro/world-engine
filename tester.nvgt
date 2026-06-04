@@ -12,19 +12,19 @@ if(key_pressed(KEY_C))
 {
 speak(p.get_x()+", "+p.get_y()+", "+p.get_z());
 }
-if(key_pressed(KEY_LEFT))
+if(key_down(KEY_LEFT))
 {
 p.move("left");
 }
-if(key_pressed(KEY_RIGHT))
+if(key_down(KEY_RIGHT))
 {
 p.move("right");
 }
-if(key_pressed(KEY_UP))
+if(key_down(KEY_UP))
 {
 p.move("forward");
 }
-if(key_pressed(KEY_DOWN))
+if(key_down(KEY_DOWN))
 {
 p.move("backward");
 }
