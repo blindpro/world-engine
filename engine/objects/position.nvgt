@@ -3,17 +3,11 @@ class position
 int x;
 int y;
 int z;
-position(int x, int y, int z)
+position(int x, int y, int z = 0)
 {
 this.x = x;
 this.y = y;
 this.z = z;
-}
-position(int x, int y)
-{
-this.x = x;
-this.y = y;
-x = 0;
 }
 position()
 {
