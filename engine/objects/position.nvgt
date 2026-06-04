@@ -1,0 +1,24 @@
+class position
+{
+int x;
+int y;
+int z;
+position(int x, int y, int z)
+{
+this.x = x;
+this.y = y;
+this.z = z;
+}
+position(int x, int y)
+{
+this.x = x;
+this.y = y;
+x = 0;
+}
+position()
+{
+x = 0;
+y = 0;
+z = 0;
+}
+}
