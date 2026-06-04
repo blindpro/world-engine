@@ -31,7 +31,7 @@ else if(dir == "backward" and pos.y-1>=0)
 {
 pos.y--;
 }
-else if(dir == "left" and pos.y-1>=0)
+else if(dir == "left" and pos.x-1>=0)
 {
 pos.x--;
 }
