@@ -25,6 +25,34 @@ pos.x = x;
 pos.y = y;
 pos.z = z;
 }
+string get_dir_to(world_object@other)
+{
+if(get_z()<other.get_z())
+{
+return "up";
+}
+else if(get_z()>other.get_z())
+{
+return "down";
+}
+else if(get_x()<other.get_x())
+{
+return "right";
+}
+else if(get_x()>other.get_x())
+{
+return "left";
+}
+else if(get_y()<other.get_y())
+{
+return "forward";
+}
+else if(get_y()>other.get_y())
+{
+return "backward";
+}
+return "";
+}
 int get_distance_3d(world_object@ other)
 {
 return get_3d_distance(get_x(), get_y(), get_z(), other.get_x(), other.get_y(), other.get_z());
