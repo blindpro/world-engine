@@ -1,7 +1,7 @@
-class mooving_object: world_object
+class moving_object: world_object
 {
 int map_size = 0;
-mooving_object(int x, int y, int z = 0)
+moving_object(int x, int y, int z = 0)
 {
 super(x,y,z);
 }

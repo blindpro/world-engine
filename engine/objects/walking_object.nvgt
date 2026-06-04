@@ -1,4 +1,4 @@
-class walking_object: mooving_object
+class walking_object: moving_object
 {
 timer movetimer;
 int speed;
@@ -17,7 +17,7 @@ if(!can_move())
 {
 return;
 }
-mooving_object::move(dir);
+moving_object::move(dir);
 movetimer.restart();
 }
 }
