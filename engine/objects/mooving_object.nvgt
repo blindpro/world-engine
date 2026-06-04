@@ -8,9 +8,17 @@ void move(string dir)
 {
 if(dir == "up")
 {
-pos.y++;
+pos.z++;
 }
 else if(dir == "down")
+{
+pos.z--;
+}
+else if(dir == "forward")
+{
+pos.y++;
+}
+else if(dir == "backward")
 {
 pos.y--;
 }
