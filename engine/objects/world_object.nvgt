@@ -1,0 +1,27 @@
+#include"rotation.nvgt"
+#include"position.nvgt"
+class world_object
+{
+position pos;
+int get_x()
+{
+return pos.x;
+}
+int get_y()
+{
+return pos.y;
+}
+int get_z()
+{
+return pos.z;
+}
+int get_distance_3d(world_object other)
+{
+return get_3d_distance(get_x(), get_y(), get_z(), other.get_x(), other.get_y(), other.get_z());
+}
+int get_distance_2d(world_object other)
+{
+return get_2d_distance(get_x(), get_y(), other.get_x(), other.get_y());
+}
+
+}
