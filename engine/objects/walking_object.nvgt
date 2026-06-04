@@ -2,9 +2,9 @@ class walking_object: mooving_object
 {
 timer movetimer;
 int speed;
-walking_object(int x, int y, int z, int speed)
+walking_object(int x, int y, int z = 0, int speed)
 {
-super(x,y,z);
+super(x,y, z);
 this.speed = speed;
 }
 bool can_move()

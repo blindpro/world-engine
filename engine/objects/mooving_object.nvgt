@@ -1,6 +1,6 @@
 class mooving_object: world_object
 {
-mooving_object(int x, int y, int z)
+mooving_object(int x, int y, int z = 0)
 {
 super(x,y,z);
 }
