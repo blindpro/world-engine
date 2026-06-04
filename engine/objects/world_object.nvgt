@@ -57,6 +57,14 @@ return "backward";
 }
 return "";
 }
+bool same_position(world_object@other)
+{
+if(other is null)
+{
+return false;
+}
+return pos.x == other.get_x() and pos.y == other.get_y() and pos.z == other.get_z();
+}
 int get_distance_3d(world_object@ other)
 {
 if(other is null)
@@ -73,5 +81,12 @@ return -1;
 }
 return get_2d_distance(get_x(), get_y(), other.get_x(), other.get_y());
 }
-
+bool is_near(world_object@ other, int distance)
+{
+return get_distance_3d(other) <=distance;
+}
+string get_position()
+{
+return pos.x+", "+pos.y+", "+pos.z;
+}
 }
