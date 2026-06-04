@@ -8,3 +8,5 @@ pack_creator.nvgt
 Makefile
 task_builder.exe
 *sounds/
+*.zip
+*.dll
