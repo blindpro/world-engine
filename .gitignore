@@ -1,0 +1,10 @@
+*.exe
+*.ogg
+*.vscode/
+*.ini
+*.dat
+*.pk
+pack_creator.nvgt
+Makefile
+task_builder.exe
+*sounds/

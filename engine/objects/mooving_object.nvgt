@@ -1,0 +1,22 @@
+class mooving_object: world_object
+{
+void move(string dir)
+{
+if(dir == "up")
+{
+pos.y++;
+}
+else if(dir == "down")
+{
+pos.y--;
+}
+else if(dir == "left")
+{
+pos.x--;
+}
+else if(dir == "right")
+{
+pos.x++;
+}
+}
+}
