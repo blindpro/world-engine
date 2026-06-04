@@ -1,6 +1,12 @@
 class world_object
 {
 position pos;
+world_object(int x, int y, int z = 0)
+{
+pos.x = x;
+pos.y = y;
+pos.z = z;
+}
 int get_x()
 {
 return pos.x;

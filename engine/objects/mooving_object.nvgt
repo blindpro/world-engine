@@ -1,6 +1,10 @@
 class mooving_object: world_object
 {
-void move_internal(string dir)
+mooving_object(int x, int y, int z)
+{
+super(x,y,z);
+}
+void move(string dir)
 {
 if(dir == "up")
 {
