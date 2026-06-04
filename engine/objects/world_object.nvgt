@@ -27,6 +27,10 @@ pos.z = z;
 }
 string get_dir_to(world_object@other)
 {
+if(other is null)
+{
+return"";
+}
 if(get_z()<other.get_z())
 {
 return "up";
@@ -55,10 +59,18 @@ return "";
 }
 int get_distance_3d(world_object@ other)
 {
+if(other is null)
+{
+return -1;
+}
 return get_3d_distance(get_x(), get_y(), get_z(), other.get_x(), other.get_y(), other.get_z());
 }
 int get_distance_2d(world_object@ other)
 {
+if(other is null)
+{
+return -1;
+}
 return get_2d_distance(get_x(), get_y(), other.get_x(), other.get_y());
 }
 
