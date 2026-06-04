@@ -1,5 +1,3 @@
-#include"rotation.nvgt"
-#include"position.nvgt"
 class world_object
 {
 position pos;
