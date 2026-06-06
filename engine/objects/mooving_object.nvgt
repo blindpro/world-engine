@@ -5,43 +5,49 @@ moving_object(int x, int y, int z = 0)
 {
 super(x,y,z);
 }
-void move(string dir)
+bool move(string dir)
 {
 if(dir == "up")
 {
 if(map_size>0 and pos.z+1>map_size)
 {
-return;
+return false;
 }
 pos.z++;
+return true;
 }
 else if(dir == "down" and pos.z-1>=0)
 {
 pos.z--;
+return true;
 }
 else if(dir == "forward")
 {
 if(map_size>0 and pos.y+1>map_size)
 {
-return;
+return false;
 }
 pos.y++;
+return true;
 }
 else if(dir == "backward" and pos.y-1>=0)
 {
 pos.y--;
+return true;
 }
 else if(dir == "left" and pos.x-1>=0)
 {
 pos.x--;
+return true;
 }
 else if(dir == "right")
 {
 if(map_size>0 and pos.x+1>map_size)
 {
-return;
+return false;
 }
 pos.x++;
+return true;
 }
 }
 }

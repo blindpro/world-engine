@@ -11,13 +11,14 @@ bool can_move()
 {
 return movetimer.elapsed>=speed;
 }
-void move(string dir)
+bool move(string dir)
 {
 if(!can_move())
 {
-return;
+return false;
 }
 moving_object::move(dir);
 movetimer.restart();
+return true;
 }
 }
