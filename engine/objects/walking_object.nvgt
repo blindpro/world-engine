@@ -17,8 +17,7 @@ if(!can_move())
 {
 return false;
 }
-moving_object::move(dir);
 movetimer.restart();
-return true;
+return moving_object::move(dir);
 }
 }

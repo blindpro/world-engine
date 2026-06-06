@@ -49,5 +49,6 @@ return false;
 pos.x++;
 return true;
 }
+return false;
 }
 }
