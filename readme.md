@@ -11,7 +11,7 @@ features.
 - world object, basic object with position and helper functions for distance.
 - mooving object, class used for anything that moves. Allows for movement, but unrestricted.
 - Walking object, this allows for restricted movement by a spasific speed.
-
+- projectile, a object that moves in a 3d space limmited by speed and rrange.
 ## How to use.
 
 Include the engine.nvgt file in your scripts. This will include all objects into your code.
