@@ -1,0 +1,45 @@
+class projectile: world_object
+{
+timer speedtimer;
+int speed;
+int distance = 0;
+int spread;
+int range;
+string direction;
+vector pro;
+bool alive = true;
+projectile(int x, int y, int z, int speed, int spread, int range, string direction)
+{
+super(x,y,z);
+this.speed = speed;
+this.spread = spread;
+this.range = range;
+this.direction = direction;
+}
+void update()
+{
+if(speedtimer.elapsed>=speed)
+{
+pro = move(get_x(),get_y(),direction);
+update_position(pro.x,pro.y,pro.z);
+distance++;
+if(out_of_range())
+{
+kill();
+}
+speedtimer.restart();
+}
+}
+bool out_of_range()
+{
+return distance>=range;
+}
+void kill()
+{
+alive = false;
+}
+bool is_alive()
+{
+return alive;
+}
+}
