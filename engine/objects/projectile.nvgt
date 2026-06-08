@@ -5,10 +5,10 @@ int speed;
 int distance = 0;
 int spread;
 int range;
-string direction;
+int direction;
 vector pro;
 bool alive = true;
-projectile(int x, int y, int z, int speed, int spread, int range, string direction)
+projectile(int x, int y, int z, int speed, int spread, int range, int direction)
 {
 super(x,y,z);
 this.speed = speed;
